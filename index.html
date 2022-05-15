@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div id="card">
+        <header>
+            <div class="hed"><h1 id="title">ABC-ION Tech Placement Survey</h1></div>
+            <p id="description">Thank you for participating the ABC job fair. We would appreciate it if you would
+                complete
+                this survey for smooth recruitment and communication.
+                Please contact abcd@abc for further queries.</p>
+        </header>
+        <form id="survey-form">
+            <div id="textbox-div">
+                <div>
+                    <label for="name" id="name-label"><input class="textbox" type="text" id="name" placeholder="Name" required> 
+                    </label>
+                </div>
+                <div class="email-number">
+                    <label for="email" id="email-label"><input class="textbox" type="email" name="" id="email"
+                            placeholder="Email" required></label>
+                    <label for="number-label" id="number-label"><input class="sec-textbox textbox" type="number" name="" id="number"
+                            min="17" max="35" placeholder="Age" ></label>
+                </div>
+            </div>
+            <div id="radiobox">
+                <div class="gender"><label for="gender-label">Gender</label></div>
+                <div class="gender"><input type="radio" name="gender" id="male" value="male">Male</div>
+                <div class="gender"><input type="radio" name="gender" id="Female" value="female">Female</div>
+                <div class="gender"><input type="radio" name="gender" id="others" value="others">Others</div>
+            </div>
+            <div class="qual">
+                <label for="Education" class="heading">Qualification</label>
+                <select name="qualification" id="dropdown">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="M.Sc">M.Sc</option>
+                    <option value="Diploma">Diploma</option>
+                </select>
+            </div>
+
+            <div class="pref-box">
+            <label for="Preferences" class="heading">Preferences</label>
+            <div class="checkbox-div">
+                <div><input type="checkbox" name="pref" id="dev" value="Development">Development</div>
+                <div><input type="checkbox" name="pref" id="test" value="Testing">Testing</div>
+                <div><input type="checkbox" name="pref" id="devop" value="DevOps">DevOps</div>
+                <div><input type="checkbox" name="pref" id="BA" value="ba">BA</div>
+                <div><input type="checkbox" name="pref" id="ui" value="UI/UX">UI/UX</div>
+            </div>
+        </div>
+            <footer>
+                    <label for="summary"  class="heading">Summary</label>
+                    <div class="sum">
+                    <textarea name="summ" id="summary" cols="30" rows="10"></textarea>
+                </div>
+                <div class="sub-button">
+                <button type="submit" id="submit">Submit</button>
+                </div>
+            </footer>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
