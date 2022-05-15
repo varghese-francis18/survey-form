@@ -235,7 +235,8 @@ button {
         margin: 1.5vh;
         margin-left: 2vh;
         margin-top: 1vh;
-        grid-template-columns: 25% 25% 25% 25%;
+        width: 50%;
+        grid-template-columns: 100%;
 
     }
 
@@ -270,11 +271,13 @@ button {
     .gender {
         border: 1px black solid;
         background-color: rgb(137, 132, 132);
+        font-size: larger;
+        text-align: start;
+        padding: 0.4vh;
     
-        font-size: medium;
-        text-align: center;
-        padding-top: 1vh;
-    
+    }
+    .qual{
+        margin-top: 12vh;
     }
    
     #number{
