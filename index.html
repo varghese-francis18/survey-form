@@ -4,73 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Survey</title>
+    <title>Feedback form</title>
 </head>
 
 <body>
-    <div id="card">
-        <header>
-            <div class="hed"><h1 id="title">ABC-ION Tech Placement Survey</h1></div>
-            <p id="description">Thank you for participating the ABC job fair. We would appreciate it if you would
-                complete
-                this survey for further procedure and communication.
-                Please contact abcd@abc for further queries.</p>
-        </header>
-        <form id="survey-form">
-            <div id="textbox-div">
-                <div>
-                    <label for="name" id="name-label"><input class="textbox" type="text" id="name" placeholder="Name" required> 
+    <div class="container">
+        <div class="main">
+            <h1 id="title">Help Us Serve You Better at Taste Factory!</h1>
+            <p id="description">We value your feedback! Please take a moment to let us know how we are doing.</p>
+            <form action="" id="survey-form">
+                <div class="content">
+                    <label for="name" id="name-label">
+                        <p>Name</p>
+                        <input type="text" name="name" class="text-box" id="name" placeholder="Name" size="80">
+                    </label>
+                    <label for="email" id="email-label">
+                        <p>Email</p>
+                        <input type="email" class="text-box" name="age" id="email" placeholder="Email" size="80"
+                            required>
+                    </label>
+                    <label for="age" id="number">
+                        <p>Age</p>
+                        <input type="number" name="age" class="text-box" id="number" min="5" max="200"
+                            placeholder="Age">
+                    </label>
+                    <label for="visit">
+                        <p>Type of visit</p>
+                        <select name="visit-type" id="drop-down" class="text-box" >
+                            <option>Dine-in</option>
+                            <option>Take-out</option>
+                            <option>Delivery</option>
+                        </select>
+                    </label>
+                    <label for="exp">
+                        <p>Overall Experience</p>
+                        <p class="block-class"><input type="radio" name="experience" id="exp-excellent" value="Excellent">Excellent</p>
+                        <p class="block-class"><input type="radio" name="experience" id="exp-good" value="Good">Good</p>
+                        <p class="block-class"><input type="radio" name="experience" id="exp-average" value="Average">Average</p>
+                        <p class="block-class"><input type="radio" name="experience" id="exp-poor" value="Poor">Poor</p>
+                        <p class="block-class"><input type="radio" name="experience" id="exp-very-poor" value="Very Poor">Very Poor</p>
+                    </label>
+                    <label for="service">
+                        <p>Service</p>
+                        <p class="block-class"><input type="radio" name="experience" id="ser-excellent" value="Excellent">Excellent</p>
+                        <p class="block-class"><input type="radio" name="experience" id="ser-good" value="Good">Good </p>
+                        <p class="block-class"> <input type="radio" name="experience" id="ser-average" value="Average">Average </p>
+                        <p class="block-class"><input type="radio" name="experience" id="ser-poor" value="Poor">Poor</p>
+                        <p class="block-class"><input type="radio" name="experience" id="ser-very-poor" value="Very Poor">Very Poor </p>
+                    </label>
+                    <label for="quality">
+                        <p>Quality</p>
+                        <p class="block-class"><input type="radio" name="experience" id="qua-excellent" value="Excellent">Excellent</p>
+                        <p class="block-class"><input type="radio" name="experience" id="qua-good" value="Good">Good</p>
+                        <p class="block-class"><input type="radio" name="experience" id="qua-average" value="Average">Average</p>
+                        <p class="block-class"><input type="radio" name="experience" id="qua-poor" value="Poor">Poor</p>
+                        <p class="block-class"><input type="radio" name="experience" id="qua-very-poor" value="Very Poor">Very Poor</p>
+                    </label>
+                    <label for="">
+                        <p>How did you reach us?</p>
+                        <p class="block-class"> <input type="checkbox" name="info" id="social-media" value="social-media" >Social media</p>
+                        <p class="block-class"><input type="checkbox" name="info" id="Newspaper" value="Newspaper">Newspaper</p>
+                        <p class="block-class"> <input type="checkbox" name="info" id="Friends" value="Friends">Friends</p>
+                    </label>
+                    <label>
+                        <p>Any suggesions or comments</p>
+                        <textarea name="" id="suggestions" cols="30" rows="10" class="text-box"></textarea>
+                    </label>
+                    <label>
+                        <button type="submit" id="submit" class="text-box">Submit</button>
                     </label>
                 </div>
-                <div class="email-number">
-                    <label for="email" id="email-label"><input class="textbox" type="email" name="" id="email"
-                            placeholder="Email" required></label>
-                    <label for="number-label" id="number-label"><input class="sec-textbox textbox" type="number" name="" id="number"
-                            min="17" max="35" placeholder="Age" ></label>
-                </div>
-            </div>
-            <div id="radiobox">
-                <div class="gender"><label for="gender-label">Gender</label></div>
-                <div class="gender"><input type="radio" name="gender" id="male" value="male">Male</div>
-                <div class="gender"><input type="radio" name="gender" id="Female" value="female">Female</div>
-                <div class="gender"><input type="radio" name="gender" id="others" value="others">Others</div>
-            </div>
-            <div class="qual">
-                <label for="Education" class="heading">Qualification</label>
-                <select name="qualification" id="dropdown">
-                    <option value="B.Tech">B.Tech</option>
-                    <option value="M.Tech">M.Tech</option>
-                    <option value="B.Sc">B.Sc</option>
-                    <option value="M.Sc">M.Sc</option>
-                    <option value="Diploma">Diploma</option>
-                </select>
-            </div>
-
-            <div class="pref-box">
-            <label for="Preferences" class="heading">Preferences</label>
-            <div class="checkbox-div">
-                <div><input type="checkbox" name="pref" id="dev" value="Development">Development</div>
-                <div><input type="checkbox" name="pref" id="test" value="Testing">Testing</div>
-                <div><input type="checkbox" name="pref" id="devop" value="DevOps">DevOps</div>
-                <div><input type="checkbox" name="pref" id="BA" value="ba">BA</div>
-                <div><input type="checkbox" name="pref" id="ui" value="UI/UX">UI/UX</div>
-            </div>
+            </form>
         </div>
-            <footer>
-                    <label for="summary"  class="heading">Summary</label>
-                    <div class="sum">
-                    <textarea name="summ" id="summary" cols="30" rows="10"></textarea>
-                </div>
-                <div class="sub-button">
-                <button type="submit" id="submit">Submit</button>
-                </div>
-            </footer>
-
-
-        </form>
-
     </div>
 </body>
 
